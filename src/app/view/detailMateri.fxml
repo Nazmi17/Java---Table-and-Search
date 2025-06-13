@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.DetailMateriController"
+            prefWidth="500" prefHeight="350">
+    <children>
+        <VBox layoutX="20" layoutY="20" spacing="10" prefWidth="460" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="20" AnchorPane.bottomAnchor="20">
+            <children>
+                <Label text="Nama Materi:" style="-fx-font-weight: bold;" />
+                <Label fx:id="lblNama" wrapText="true" />
+
+                <Label text="Penjelasan:" style="-fx-font-weight: bold;" />
+                <TextArea fx:id="lblPenjelasan" editable="false" wrapText="true" prefRowCount="4" />
+
+                <Label text="Link Website:" style="-fx-font-weight: bold;" />
+                <Hyperlink fx:id="linkWebsite" wrapText="true" />
+
+                <Label text="Link Video:" style="-fx-font-weight: bold;" />
+                <Hyperlink fx:id="linkVideo" wrapText="true" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
